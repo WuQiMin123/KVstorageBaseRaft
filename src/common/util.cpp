@@ -63,7 +63,7 @@ bool isReleasePort(unsigned short usPort){
 }
 
 //封装一个带时间戳和调试开关的打印函数，用于在调试阶段输出日志信息。
-void DPrint(const char *format, ...){
+void DPrintf(const char *format, ...){
     if(Dbug){
         time_t now = time(nullptr);
         tm *nowtm = localtime(&now);        // 转换为本地时间结构体 tm
